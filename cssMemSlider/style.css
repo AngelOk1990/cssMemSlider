@@ -1,11 +1,11 @@
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
   }
   
   body, html {
-    margin: 0;
-    padding: 0;
     width: 100%;
     height: 100%;
   }
@@ -15,15 +15,14 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(159deg, rgba(2,0,36,1) 0%, rgba(50,9,121,0.5329482134650736) 35%, rgba(0,212,255,1) 100%);
-    font-family: 'Lato', sans-serif;
   }
   
   .slider {
     display: grid;
     grid-template-columns: calc(80% - 1rem) 20%;
     grid-template-rows: auto 10vh;
-    row-gap: 1rem;
-    column-gap: 1rem;
+    row-gap: 1.2rem;
+    column-gap: 1.2rem;
     margin: 0 auto;
     width: 50vw;
     max-width: 100rem;
@@ -38,7 +37,7 @@
     transition: transform 0.5s ease 0.2s;
   }
   
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     .slider__slides {
       height: 35vh;
     }
@@ -110,59 +109,6 @@
     background-image: url("./assets/images/4.jpg");
   }
   
-  #slide1:checked ~ .slider__slides {
-    transform: translateX(0);
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  #slide2:checked ~ .slider__slides {
-    transform: translateX(-25%);
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  #slide3:checked ~ .slider__slides {
-    transform: translateX(-50%);
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  #slide4:checked ~ .slider__slides {
-    transform: translateX(-75%);
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .slider__captures .captures__capture {
-    margin: 0;
-    width: 100%;
-    font-size: 1.4rem;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .slider__captures .captures__capture {
-      font-size: 1.2rem;
-    }
-  }
-  
-  #slide1:checked ~ .slider__captures {
-    transform: translateX(0);
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  #slide2:checked ~ .slider__captures {
-    transform: translateX(-25%);
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  #slide3:checked ~ .slider__captures {
-    transform: translateX(-50%);
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  #slide4:checked ~ .slider__captures {
-    transform: translateX(-75%);
-    transition: transform 0.5s ease-in-out;
-  }
-  
   .switch {
     display: flex;
     justify-content: center;
@@ -174,7 +120,7 @@
   
   .switch:hover .switch__color {
     background-color: #ececd7;
-    transition: background 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
   
   .switch__color {
@@ -182,7 +128,7 @@
     height: 1rem;
     border-radius: 50%;
     background-color: #5c1e7e;
-    transition: background 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
   
   @media screen and (max-width: 768px) {
@@ -235,3 +181,60 @@
     border-color: #ececd7;
     transition: border 0.5s ease-in-out;
   }
+
+  
+  #slide1:checked ~ .slider__slides {
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  #slide2:checked ~ .slider__slides {
+    transform: translateX(-25%);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  #slide3:checked ~ .slider__slides {
+    transform: translateX(-50%);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  #slide4:checked ~ .slider__slides {
+    transform: translateX(-75%);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider__captures .captures__capture {
+    margin: 0;
+    width: 100%;
+    font-size: 1.4rem;
+    transition: transform 0.5s ease-in-out;
+    color: rgb(42, 9, 44);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .slider__captures .captures__capture {
+      font-size: 1.2rem;
+    }
+  }
+  
+  #slide1:checked ~ .slider__captures {
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  #slide2:checked ~ .slider__captures {
+    transform: translateX(-25%);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  #slide3:checked ~ .slider__captures {
+    transform: translateX(-50%);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  #slide4:checked ~ .slider__captures {
+    transform: translateX(-75%);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  
