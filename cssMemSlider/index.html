@@ -8,45 +8,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="slider__container">
-    <div class="slider">
-        <input type="text" class="slider__switch first active">
-        <input type="text" class="slider__switch second">
-        <input type="text" class="slider__switch third">
-        <input type="text" class="slider__switch fourth">
-        <input type="text" class="slider__switch fifth">
-        <div class="slider__slides slide">
-            <div class="slide slide__first"></div>
-            <div class="slide slide__second"></div>
-            <div class="slide slide__third"></div>
-            <div class="slide slide__fourth"></div>
-            <div class="slide slide__fifth"></div>
-        </div>
-        <div class="slider__captions caption">
-            <p class="caption__first"></p>
-            <p class="caption__second"></p>
-            <p class="caption__third"></p>
-            <p class="caption__fourth"></p>
-            <p class="caption__fifth"></p>
-        </div>
-        <div class="slider__switch-wrapper wrapper">
-            <label class="wrapper__first" for="slide__first">
-                <span class="wrapper-dot"></span>
-              </label>
-              <label class="wrapper__second" for="slide__first">
-                <span class="wrapper-dot"></span>
-              </label>
-              <label class="wrapper__third" for="slide__first">
-                <span class="wrapper-dot"></span>
-              </label>
-              <label class="wrapper__fourth" for="slide__first">
-                <span class="wrapper-dot"></span>
-              </label>
-              <label class="wrapper__fifth" for="slide__first">
-                <span class="wrapper-dot"></span>
-              </label>
-        </div>
+  <div class="slider">
+    <input type="radio" name="switch" id="slide1" checked>
+    <input type="radio" name="switch" id="slide2">
+    <input type="radio" name="switch" id="slide3">
+    <input type="radio" name="switch" id="slide4">
+    <div class="slider__slides slides">
+      <div class="slides__slide slide1"></div>
+      <div class="slides__slide slide2"></div>
+      <div class="slides__slide slide3"></div>
+      <div class="slides__slide slide4"></div>
     </div>
-</div>
+    <div class="slider__switch">
+      <label class="switch switch1" for="slide1">
+        <span class="switch__color"></span>
+      </label>
+      <label class="switch switch2" for="slide2">
+        <span class="switch__color"></span>
+      </label>
+      <label class="switch switch3" for="slide3">
+        <span class="switch__color"></span>
+      </label>
+      <label class="switch switch4" for="slide4">
+        <span class="switch__color"></span>
+      </label>
+    </div>
+    <div class="slider__captures captures">
+      <p class="captures__capture capture1">Психолог:<br>каждый сон имеет смысл<br>Мой сон:</p>
+      <p class="captures__capture capture2">Мать плохому не научит</p>
+      <p class="captures__capture capture3">Мне всегда казалось, что на этой картине<br> чего-то не хватает.Теперь она идеальна.</p>
+      <p class="captures__capture capture4">Без комментариев...</p>
+    </div>
+    </div>
 </body>
 </html>
