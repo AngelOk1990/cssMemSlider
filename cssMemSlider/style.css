@@ -63,22 +63,7 @@
     width: 100%;
     z-index: 2;
   }
-  
-  @media screen and (max-width: 768px) {
-    .slider {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .slider__capture {
-      order: 5;
-    }
-  
-    .slider__switch {
-      justify-content: center;
-    }
-  }
-  
+
   input {
     display: none;
   }
@@ -135,6 +120,21 @@
     .switch__color {
       width: 0.75rem;
       height: 0.75rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .slider {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .slider__capture {
+      order: 5;
+    }
+  
+    .slider__switch {
+      justify-content: center;
     }
   }
   
